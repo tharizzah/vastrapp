@@ -18,7 +18,6 @@ import Stream from "./components/Stream";
 import Faqs from "./components/Faqs";
 import Footer from "./components/Footer";
 import RevenueCalc from "./components/RevenueCalc";
-import Contact from "./components/contact";
 
 function App() {
   useEffect(() => {
