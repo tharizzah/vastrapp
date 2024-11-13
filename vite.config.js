@@ -8,7 +8,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: "index.html", // Main entry point
-        about: "about.html" // Second entry point
+        privacy: "privacy-policy.html" // Second entry point
       }
     }
   }
