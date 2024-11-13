@@ -6,26 +6,24 @@ const PieChartW = () => {
   const [options, setOptions] = useState({
     data: getWebsiteData(),
     title: {
-      text: "",
+      text: ""
     },
     legend: {
-      position: 'left',
-    
-  },
+      position: "left"
+    },
     series: [
       {
         type: "pie",
         angleKey: "amount",
         calloutLabelKey: "asset",
         sectorLabelKey: "amount",
-        // sectorLabel: {
-        //   color: "white",
-        //   fontWeight: "bold",
-        //   formatter: ({ value }) => `${(params.value * 100).toFixed(2)}%`
-        // }
-        
-      },
-    ],
+        sectorLabel: {
+          color: "white",
+          fontWeight: "bold",
+          formatter: ({ value }) => `${(params.value * 100).toFixed(2)}%`
+        }
+      }
+    ]
   });
 
   return (
@@ -38,7 +36,6 @@ const PieChartW = () => {
           options={options}
           className="chart"
           style={{ width: "800px", height: "400px" }}
-          
         />
       </div>
     </div>
