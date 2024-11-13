@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { AgCharts } from "ag-charts-react";
+import { getWebsiteData } from "../data.js";
 
-const PieChartW = () => {
+const PieChart_w = () => {
   const [options, setOptions] = useState({
     data: getWebsiteData(),
     title: {
@@ -42,4 +43,4 @@ const PieChartW = () => {
   );
 };
 
-export default PieChartW;
+export default PieChart_w;
