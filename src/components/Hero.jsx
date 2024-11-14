@@ -8,8 +8,8 @@ const Hero = () => {
     >
       <div className="space-between">
         <div className="fifty">
-          <h1 className="heading">VASTR.solutions</h1>
-          
+          <h1 className="heading">VASTR</h1>
+
           <h2>Build Better Music Licensing Into Your Platform</h2>
           <p>
             VASTR seamlessly integrates with your existing platform, delivering
@@ -27,7 +27,6 @@ const Hero = () => {
               <div>Learn More</div>
             </a>
           </div>
-          
         </div>
         <div className="spacer5p"></div>
         <div className="fifty"></div>

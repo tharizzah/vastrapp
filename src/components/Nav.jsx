@@ -20,7 +20,7 @@ const Nav = () => {
           <div>VASTR</div>
         </a>
         <nav role="navigation" className="nav-menu w-nav-menu">
-          <a href="./#faqs" className="nav-link w-nav-link">
+          <a href="#faqs" className="nav-link w-nav-link">
             FAQ
           </a>
         </nav>
