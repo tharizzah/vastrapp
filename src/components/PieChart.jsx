@@ -6,6 +6,7 @@ import { getAppleData } from "../data.js";
 const PieChart = () => {
   const [options, setOptions] = useState({
     data: getAppleData(),
+    theme: "ag-material-dark",
     title: {
       text: ""
     },
@@ -17,12 +18,12 @@ const PieChart = () => {
         type: "pie",
         angleKey: "amount",
         calloutLabelKey: "asset",
-        sectorLabelKey: "amount",
-        sectorLabel: {
-          color: "white",
-          fontWeight: "bold",
-          formatter: ({ value }) => `${(params.value * 100).toFixed(2)}%`
-        }
+        sectorLabelKey: "amount"
+        // sectorLabel: {
+        //   color: "white",
+        //   fontWeight: "bold",
+        //   formatter: ({ value }) => `${(params.value * 100).toFixed(2)}%`
+        // }
       }
     ]
   });

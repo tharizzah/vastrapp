@@ -20,6 +20,11 @@ const RevenueCalc = () => {
     }
   }, [refresh]);
 
+
+  useEffect(()=>{
+    calcRevenue()
+  },[value,streams, rate])
+
   useEffect(() => {
     if (!isChecked) {
       setRate("0.02");
@@ -55,18 +60,27 @@ const RevenueCalc = () => {
 
   function calcAppleMusic() {
     let numRate = 0.01;
+    if(rate < 0.01){
+      numRate = 0
+    }
     let numStreams = Number(streams);
     setRev3(numRate * numStreams);
   }
 
   function calcSpotify() {
     let numRate = 0.004;
+    if(rate < 0.004){
+      numRate = 0
+    }
     let numStreams = Number(streams);
     setRev2(numRate * numStreams);
   }
 
   function calcPandora() {
     let numRate = 0.00133;
+    if(rate < 0.00133){
+      numRate = 0
+    }
     let numStreams = Number(streams);
     setRev4(numRate * numStreams);
   }
@@ -76,25 +90,11 @@ const RevenueCalc = () => {
     let rateInput = Number(rate);
     if (!isNumber(streamQty)) {
       alert("Streams must be a number.");
-      return;
-    }
-    if (streamQty <= 99) {
-      alert("Streams must be at least 100");
-      return;
-    }
-    if (streamQty > 100000000) {
-      alert("Streams must be at less than or equal to 100,000,000");
-      return;
+      return
     }
     if (!isNumber(rateInput)) {
       alert("Rate must be a number.");
-      return;
-    }
-    if (isChecked) {
-      if (rateInput < 0.05) {
-        alert("Exclusive streams must be at least $0.05");
-        return;
-      }
+      return
     }
     calcWeb();
     calcAppleMusic();
@@ -124,7 +124,7 @@ const RevenueCalc = () => {
               label="Select Split"
               //placeholder="Web based sales (no marketplace fee)"
               value={value}
-              onChange={e => setValue(e.target.value)}
+              onChange={(e) => setValue(e.target.value)}
             >
               <option value="web">Web based Sales</option>
               <option value="google">Google (Android)</option>
@@ -136,30 +136,32 @@ const RevenueCalc = () => {
               placeholder={streams}
               label="Streams"
               id="streams"
-              onChange={e => {
+              onChange={(e) => {
                 setStreams(e.currentTarget.value);
               }}
             />
-            <div>
+            <div >
               <SwitchField
                 className="card-rows"
                 label="Exclusive to VASTR"
                 isChecked={isChecked}
-                onChange={e => {
+                onChange={(e) => {
                   setIsChecked(e.target.checked);
                 }}
               />
             </div>
             {isChecked && (
               <div>
+                
                 <div>Rate per stream</div>
-                <div>
-                  $
+                <div className="card-rows">
+                  <h4>$</h4>
+                  <div className="spacer5p"></div>
                   <Input
                     placeholder="0.05"
                     label="Rate"
                     id="rate"
-                    onChange={e => {
+                    onChange={(e) => {
                       setRate(e.currentTarget.value);
                     }}
                   />
@@ -167,16 +169,15 @@ const RevenueCalc = () => {
               </div>
             )}
             <div className="btn-container">
-              <Button onClick={() => calcRevenue()}>Calculate</Button>
+              * Exclusives have a minimum rate of $0.05
             </div>
           </div>
-          <div className="spacer-20"></div>
           <div
             data-w-id="4ce1a558-00d1-b404-ba6e-55e4331257eb"
             style={{ opacity: 0 }}
-            className="w-full"
+            className="container"
           >
-            <div className="center nmb">
+            <div className="center">
               {!refresh && (
                 <BarChart rev1={rev1} rev2={rev2} rev3={rev3} rev4={rev4} />
               )}

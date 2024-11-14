@@ -10,6 +10,7 @@ const Built = () => {
         <h1 className="heading center">
           Built for Record Labels and Publishers
         </h1>
+        
         <div className="card-rows">
           <div
             data-w-id="819bdb79-e0ef-f8f4-1e29-1431a225e362"
@@ -21,7 +22,7 @@ const Built = () => {
                 src={check}
                 loading="lazy"
                 width="75"
-                alt="Built for Record Labels and Publishers"
+                alt=""
                 className="icon-cards"
               />
             </div>
@@ -44,7 +45,7 @@ const Built = () => {
                 src={details}
                 loading="lazy"
                 width="75"
-                alt="Create Licenses with Custom Pricing"
+                alt=""
                 className="icon-cards"
               />
             </div>
@@ -65,12 +66,7 @@ const Built = () => {
             className="cards"
           >
             <div className="center">
-              <img
-                src={manage}
-                loading="lazy"
-                alt="Distribute and Manage Rights Easily"
-                className="icon-cards"
-              />
+              <img src={manage} loading="lazy" alt="" className="icon-cards" />
             </div>
             <div className="card-title">
               Distribute and Manage Rights Easily

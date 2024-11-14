@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import { getBarChartData } from "../data.js";
-
 // React Chart Component
 import { AgCharts } from "ag-charts-react";
 
@@ -11,6 +10,7 @@ const BarChart = ({ rev1, rev2, rev3, rev4 }) => {
     // Data: Data to be displayed in the chart
     data: getBarChartData(rev1, rev2, rev3, rev4),
     // Series: Defines which chart type and data to use
+    theme: "ag-material",
     series: [
       {
         type: "bar",

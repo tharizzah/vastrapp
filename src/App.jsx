@@ -18,6 +18,10 @@ import Stream from "./components/Stream";
 import Faqs from "./components/Faqs";
 import Footer from "./components/Footer";
 import RevenueCalc from "./components/RevenueCalc";
+import Contact from "./components/contact";
+import Licensor from "./components/Licensor";
+import Distribute from "./components/Distribute";
+import Identify from "./components/Identify";
 
 function App() {
   useEffect(() => {
@@ -38,9 +42,11 @@ function App() {
         </section>
         <PieChartSelector />
         <RevenueCalc />
-        <Features />
+        {/* <Features />
         <Built />
-        <Industry />
+        <Industry /> */}
+        <Licensor />
+        <Distribute />
         <section className="section smoke">
           <Deamle />
         </section>

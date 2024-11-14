@@ -10,6 +10,7 @@ const Features = () => {
         <h1 className="heading center">
           Key Features for Music Licensing and Royalty Payments
         </h1>
+        
         <div className="card-rows">
           <div
             data-w-id="4ce1a558-00d1-b404-ba6e-55e4331257d9"
@@ -21,7 +22,7 @@ const Features = () => {
                 src={schedules}
                 loading="lazy"
                 width="75"
-                alt="Automated Rights Management and Payments"
+                alt=""
                 className="icon-cards"
               />
             </div>
@@ -45,7 +46,7 @@ const Features = () => {
                 src={payouts}
                 loading="lazy"
                 width="75"
-                alt="Flexible Payment Infrastructure"
+                alt=""
                 className="icon-cards"
               />
             </div>
@@ -68,7 +69,7 @@ const Features = () => {
               <img
                 src={certified}
                 loading="lazy"
-                alt="Dynamic Licensing Controls and Pricing Models"
+                alt=""
                 className="icon-cards"
               />
             </div>

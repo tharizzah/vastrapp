@@ -10,7 +10,7 @@ const PieChartSelector = () => {
   return (
     <section id="keyfeatures" className="section pb">
       <div className="w-layout-blockcontainer container w-container">
-        <h1 className="heading center">What's the split?</h1>
+        <h1 className="heading center">Split Selector</h1>
         <div className="card-rows">
           <div
             data-w-id="4ce1a558-00d1-b404-ba6e-55e4331257eb"
@@ -33,7 +33,7 @@ const PieChartSelector = () => {
               labelHidden
               //placeholder="Web based sales (no marketplace fee)"
               value={value}
-              onChange={e => setValue(e.target.value)}
+              onChange={(e) => setValue(e.target.value)}
             >
               <option value="web">Web based Sales (no fee)</option>
               <option value="google">Google (Android)</option>
@@ -43,20 +43,19 @@ const PieChartSelector = () => {
             <div className="spacer"></div>
             <p className="paragraph-3">
               Some hardware platforms that a consumer may use to purchase
-              licenses carry a marketplace fee. Pie charts represent revenue
-              split from spins originating from specific marketplaces:
+              licenses carry a marketplace fee. Pie charts represent
+              revenue split from playbacks originating from specific marketplaces:
             </p>
-            <div style={{ paddingTop: "5%" }}>
-              <p className="paragraph-3">
-                <strong>Web</strong> - No Fee
-              </p>
-              <p className="paragraph-3">
-                <strong>Google</strong> - 3% Marketplace Fee
-              </p>
-              <p className="paragraph-3">
-                <strong>Apple</strong> - 30% Marketplace Fee
-              </p>
-            </div>
+            <div style={{ paddingTop: "5%" }}></div>
+            <p className="paragraph-3">
+              Web - No Fee
+            </p>
+            <p className="paragraph-3">
+              Google - 3% Marketplace Fee
+            </p>
+            <p className="paragraph-3">
+              Apple - 30% Marketplace Fee
+            </p>
           </div>
         </div>
       </div>

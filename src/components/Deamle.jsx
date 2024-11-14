@@ -10,7 +10,9 @@ const Licensing = () => {
       className="w-layout-blockcontainer container w-container"
     >
       <div className="center col">
-        <h2>Meet Deamle: More Than Just Streaming</h2>
+      <h2 >
+          Deamle: The consumer gateway to pay per stream licensing
+        </h2>
         <p>
           Available on iOS and Android and Web, Deamle is our consumer streaming
           app that goes beyond traditional platforms. While offering familiar
