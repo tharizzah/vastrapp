@@ -18,7 +18,7 @@ import Stream from "./components/Stream";
 import Faqs from "./components/Faqs";
 import Footer from "./components/Footer";
 import RevenueCalc from "./components/RevenueCalc";
-import Contact from "./components/contact";
+import Contact from "./components/Contact";
 import Licensor from "./components/Licensor";
 import Distribute from "./components/Distribute";
 import Identify from "./components/Identify";
