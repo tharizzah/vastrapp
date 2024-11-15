@@ -14,9 +14,11 @@ const Licensor = () => {
     <section id="keyfeatures" className="section smoke">
       <div className="w-layout-blockcontainer container w-container">
         <h1 className="heading center">
-          VASTR Licensor: Built for Copy Right Owners
+          VASTR Licensor: Built for Copyright Owners
         </h1>
-        <h3 className="heading3 center">Use VASTR's Licensor App to upload music, terms and more.</h3>
+        <h3 className="heading3 center">
+          Use VASTR's Licensor App to upload music, terms, and more
+        </h3>
         <div className="card-rows">
           <div
             data-w-id="819bdb79-e0ef-f8f4-1e29-1431a225e362"
@@ -92,8 +94,7 @@ const Licensor = () => {
             className="w-layout-blockcontainer container w-container"
           >
             <div className="center col"></div>
-           
-            
+
             <div className="space-between stretch _10p">
               <div className="div-grow">
                 <h2>Master Work’s Share and Publisher’s Share</h2>
@@ -141,7 +142,7 @@ const Licensor = () => {
                 </p>
               </div>
             </div>
-            
+
             <div className="space-between stretch _10p">
               <div className="div-grow">
                 <h2>User Managed Accounts</h2>
@@ -169,7 +170,6 @@ const Licensor = () => {
                 />
               </div>
             </div>
-            
           </div>
         </div>
       </div>

@@ -64,7 +64,7 @@ const Faqs = () => {
               VASTR partners with established music industry entities that have
               a proven track record. To qualify for our platform, you must be a
               registered business entity (such as a record label, publishing
-              company, or licensed music marketplace) with documented sales
+              company, or licensed music Marketplace) with documented sales
               history. Once qualified, you'll have access to our comprehensive
               licensing tools where you can create digital licenses, set
               streaming rates, and manage royalty distributions. Our automated
@@ -125,10 +125,10 @@ const Faqs = () => {
               VASTR allows artists and labels to control pricing per stream for
               exclusive licenses, and a flat price of $0.02 for non-exclusive
               licenses. The platform takes a fee from each transaction before
-              marketplace fees, with 10% going to VASTR and 10% going to the
+              Marketplace fees, with 10% going to VASTR and 10% going to the
               digital store that sold it (such as VASTR's Deamle). The
-              marketplace fee then comes out (see pie charts and calculator
-              above) with the copy right owners receiving the balance.
+              Marketplace fee then comes out (see pie charts and calculator
+              above) with the copyright owners receiving the balance.
             </p>
           </div>
         </div>
@@ -247,15 +247,15 @@ const Faqs = () => {
               className="icon"
             />
             <div className="spacer10"></div>
-            <p>How much are marketplace fees, and what are they?</p>
+            <p>How much are Marketplace fees, and what are they?</p>
           </div>
           <div className="spacer20"></div>
           <div className="p-answers">
             <p>
               Marketplace fees are outside of VASTR’s control. They represent
               what companies like Apple and Google charge for sales through apps
-              originating in their marketplaces. Apple charges 30%, Google
-              charges 3%, and all website sales will have no marketplace fee
+              originating in their Marketplaces. Apple charges 30%, Google
+              charges 3%, and all website sales will have no Marketplace fee
               (0%).{" "}
             </p>
           </div>

@@ -64,7 +64,7 @@ const Industry = () => {
             <h2>Enhanced Content Protection &amp; Exclusivity Management</h2>
             <p>
               Strengthen your platform's offering with VASTR's proprietary
-              protection suite combinbed with industry standard DRM (Digital
+              protection suite combined with industry standard DRM (Digital
               Rights Management). Our infrastructure enables you to provide your
               clients with flexible content gating options—from pre-release
               campaigns to exclusive streaming rights—while maintaining ironclad
@@ -82,7 +82,7 @@ const Industry = () => {
               loading="lazy"
               sizes="(max-width: 767px) 90vw, (max-width: 991px) 56vw, 450px"
               //srcset="../assets/art-cellphone-select-p-500.png 500w, ../assets/art-cellphone-select-p-800.png 800w, ../assets/art-cellphone-select.png 1080w"
-              alt="VASTR's protection suite combinbed with industry standard DRM"
+              alt="VASTR's protection suite combined with industry standard DRM"
               className="image"
             />
           </div>
@@ -104,7 +104,7 @@ const Industry = () => {
             <p>
               Asset owners create licenses that work for their business model by
               choosing between exclusive or non-exclusive distribution. With
-              VASTR, copy right owners can customize every aspect of their
+              VASTR, copyright owners can customize every aspect of their
               licenses—from stream rate to availability. This allows owners to
               maintain complete control over how their music is distributed and
               monetized.
@@ -146,7 +146,7 @@ const Industry = () => {
           </div>
           <div className="spacer"></div>
           <div className="div-grow">
-            <h2>Pause Disbursements as Required by law</h2>
+            <h2>Pause Disbursements as Required by Law</h2>
             <p>
               Our platform is compliant with legal requirements while
               maintaining full control over copy right holders’ music rights and
