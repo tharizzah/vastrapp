@@ -33,6 +33,14 @@
   color: "white" !important;
 }
 
+div h3.heading-3 {
+  color: var(--text-blue);
+}
+
+div.drk h3.heading-3 {
+  color: #fff;
+}
+
 .chart {
   width: 800px;
   height: 475px;
