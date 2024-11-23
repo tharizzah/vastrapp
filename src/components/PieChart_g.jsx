@@ -32,7 +32,9 @@ const PieChartG = () => {
       <h3 className="heading-3" style={{ textAlign: "center" }}>
         Google Marketplace
       </h3>
-      <AgCharts options={options} className="chart" />
+      <div className="ag-theme-material">
+        <AgCharts options={options} className="chart" />
+      </div>
     </div>
   );
 };

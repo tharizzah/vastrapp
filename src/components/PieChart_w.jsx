@@ -33,7 +33,9 @@ const PieChart_w = () => {
         Website (no fee)
       </h3>
       <div>
-        <AgCharts options={options} className="chart" />
+        <div className="ag-theme-material">
+          <AgCharts options={options} className="chart" />
+        </div>
       </div>
     </div>
   );
