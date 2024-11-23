@@ -10,6 +10,7 @@
   --ag-odd-row-background-color: #1a1a1a;
   --ag-even-row-background-color: #212121;
   --ag-font-color: #ffffff;
+  --ag-background-color: color-mix(in srgb, #fff, #182230 97%);
 }
 
 .amplify-button {
@@ -34,7 +35,7 @@
 
 .chart {
   width: 800px;
-  height: auto;
+  height: 500px;
 }
 
 .w-layout-blockcontainer {
@@ -301,12 +302,39 @@
   height: 10px;
 }
 
+.drktheme {
+  background-color: #1f2b3f !important; /* #192333; */
+  color: #fff !important;
+}
+
+.drktheme select {
+  background-color: #27354e !important; /* #192333; */
+  color: #fff !important;
+  border-color: #384b70;
+}
+.drktheme select:focus {
+  background-color: #27354e !important; /* #192333; */
+  color: #fff !important;
+  border-color: #384b70;
+}
+.drktheme select:active {
+  background-color: #27354e !important; /* #192333; */
+  color: #fff !important;
+  border-color: #384b70;
+}
+
 .cards {
   border-bottom: 2px solid var(--lavendar);
   background-color: #fff;
   width: 32%;
   padding: 2%;
   box-shadow: 0 9px 12px -6px #00000029;
+}
+.cards.drk {
+  background-color: #1f2b3f; /* #192333; */
+  color: #fff;
+  border-bottom: 2px solid #384b70;
+  box-shadow: 0 9px 12px 4px #00000029;
 }
 
 .card-title {
@@ -347,6 +375,12 @@
   }
   .section.pb {
     padding-bottom: 5%;
+  }
+  .section.drk {
+    background: #192333;
+    background-color: #192333;
+    padding-bottom: 5%;
+    color: #fff;
   }
 
   .section.smoke {
@@ -718,6 +752,12 @@
     padding-top: 5%;
     padding-bottom: 10%;
   }
+  .section.drk {
+    background: #192333;
+    background-color: #192333;
+    padding-bottom: 5%;
+    color: #fff;
+  }
 
   .section.smoke {
     padding-bottom: 5%;
@@ -768,6 +808,10 @@
     font-size: 22px;
   }
 
+  .whitetxt {
+    color: #fff !important;
+  }
+
   .flex-left {
     flex-flow: row;
   }
@@ -784,6 +828,12 @@
     width: 100%;
     margin-bottom: 5%;
   }
+  .cards.drk {
+    background-color: #1f2b3f;
+    color: #fff;
+    border-bottom: 2px solid #384b70;
+    box-shadow: 0 9px 12px 4px #00000029;
+  }
 
   .card-rows {
     flex-flow: column;
@@ -793,7 +843,7 @@
   }
   .chart {
     width: 650px;
-    height: auto;
+    height: 350px;
   }
 }
 

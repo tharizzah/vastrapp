@@ -30,7 +30,7 @@ const PieChartG = () => {
 
   return (
     <div className="">
-      <h3 className="heading-3" style={{ textAlign: "center" }}>
+      <h3 className="heading-3 whitetxt" style={{ textAlign: "center" }}>
         Google Marketplace
       </h3>
       <div className="ag-theme-material">

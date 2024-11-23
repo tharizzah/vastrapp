@@ -30,7 +30,7 @@ const PieChart_w = () => {
 
   return (
     <div className="">
-      <h3 className="heading-3" style={{ textAlign: "center" }}>
+      <h3 className="heading-3 whitetxt" style={{ textAlign: "center" }}>
         Website (no fee)
       </h3>
       <div className="ag-theme-material">
