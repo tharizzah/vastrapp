@@ -17,7 +17,7 @@ const Faqs = () => {
         <div className="spacer5p"></div>
         <div
           data-w-id="b6430c66-5a74-72b6-3b08-7113c0119739"
-          className="flex-left"
+          className="flex-left faq"
         >
           <div className="space-between row">
             <img
@@ -45,7 +45,7 @@ const Faqs = () => {
         </div>
         <div
           data-w-id="b6430c66-5a74-72b6-3b08-7113c0119743"
-          className="flex-left"
+          className="flex-left faq"
         >
           <div className="space-between row">
             <img
@@ -76,7 +76,7 @@ const Faqs = () => {
         </div>
         <div
           data-w-id="b6430c66-5a74-72b6-3b08-7113c011974d"
-          className="flex-left"
+          className="flex-left faq"
         >
           <div className="space-between row">
             <img
@@ -104,7 +104,7 @@ const Faqs = () => {
         </div>
         <div
           data-w-id="b6430c66-5a74-72b6-3b08-7113c0119757"
-          className="flex-left"
+          className="flex-left faq"
         >
           <div className="space-between row">
             <img
@@ -134,7 +134,7 @@ const Faqs = () => {
         </div>
         <div
           data-w-id="b6430c66-5a74-72b6-3b08-7113c0119761"
-          className="flex-left"
+          className="flex-left faq"
         >
           <div className="space-between row">
             <img
@@ -161,7 +161,7 @@ const Faqs = () => {
         </div>
         <div
           data-w-id="60c5a06a-2a37-0a58-2f41-8b1523bb0f10"
-          className="flex-left"
+          className="flex-left faq"
         >
           <div className="space-between row">
             <img
@@ -189,7 +189,7 @@ const Faqs = () => {
         </div>
         <div
           data-w-id="4c8ef949-be1c-b16e-3b1a-8a751c5b8ff2"
-          className="flex-left"
+          className="flex-left faq"
         >
           <div className="space-between row">
             <img
@@ -236,7 +236,7 @@ const Faqs = () => {
 
         <div
           data-w-id="96a06a8b-ff0e-8c6f-abe3-9bef44a7af8e"
-          className="flex-left"
+          className="flex-left faq"
         >
           <div className="space-between row">
             <img
@@ -262,7 +262,7 @@ const Faqs = () => {
         </div>
         <div
           data-w-id="9c698a92-4450-cb4b-deb3-0e481a3af1b7"
-          className="flex-left"
+          className="flex-left faq"
         >
           <div className="space-between row">
             <img
@@ -289,7 +289,7 @@ const Faqs = () => {
         </div>
         <div
           data-w-id="ca232112-93d1-8c8d-1d64-0babbec5f5ba"
-          className="flex-left"
+          className="flex-left faq"
         >
           <div className="space-between row">
             <img

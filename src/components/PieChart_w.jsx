@@ -10,7 +10,7 @@ const PieChart_w = () => {
       text: ""
     },
     legend: {
-      position: "left"
+      position: "bottom"
     },
     series: [
       {
@@ -33,11 +33,7 @@ const PieChart_w = () => {
         Website (no fee)
       </h3>
       <div>
-        <AgCharts
-          options={options}
-          className="chart"
-          style={{ width: "800px", height: "400px" }}
-        />
+        <AgCharts options={options} className="chart" />
       </div>
     </div>
   );

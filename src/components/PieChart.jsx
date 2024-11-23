@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { AgCharts } from "ag-charts-react";
+// import "ag-grid-community/styles/ag-grid.css";
+// import "ag-grid-community/styles/ag-theme-material.css";
 import { getAppleData } from "../data.js";
 
 const PieChart = () => {
@@ -11,7 +13,7 @@ const PieChart = () => {
       text: ""
     },
     legend: {
-      position: "left"
+      position: "bottom"
     },
     series: [
       {
@@ -33,11 +35,9 @@ const PieChart = () => {
       <h3 className="heading-3" style={{ textAlign: "center" }}>
         Apple Marketplace
       </h3>
-      <AgCharts
-        options={options}
-        className="chart"
-        style={{ width: "800px", height: "400px" }}
-      />
+      <div className="ag-theme-material">
+        <AgCharts options={options} className="chart" />
+      </div>
     </div>
   );
 };

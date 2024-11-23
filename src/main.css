@@ -4,6 +4,12 @@
   --light-lavendar: #e7ecff;
   --gray: #68696f;
   --lavendar: #535f94;
+
+  --ag-background-color: #121212;
+  --ag-header-background-color: #1e1e1e;
+  --ag-odd-row-background-color: #1a1a1a;
+  --ag-even-row-background-color: #212121;
+  --ag-font-color: #ffffff;
 }
 
 .amplify-button {
@@ -24,6 +30,11 @@
   background-color: #4d89fc;
   font-weight: 600 !important;
   color: "white" !important;
+}
+
+.chart {
+  width: 800px;
+  height: auto;
 }
 
 .w-layout-blockcontainer {
@@ -761,6 +772,10 @@
     flex-flow: row;
   }
 
+  .flex-left.faq {
+    flex-flow: column;
+  }
+
   .heading-4 {
     font-size: 22px;
   }
@@ -775,6 +790,10 @@
   }
   .div-tt {
     width: 90%;
+  }
+  .chart {
+    width: 650px;
+    height: auto;
   }
 }
 
@@ -854,5 +873,9 @@
   .heading-5 {
     font-size: 24px;
     line-height: 32px;
+  }
+  .chart {
+    width: 550px;
+    height: auto;
   }
 }

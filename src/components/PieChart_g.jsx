@@ -10,7 +10,7 @@ const PieChartG = () => {
       text: ""
     },
     legend: {
-      position: "left"
+      position: "bottom"
     },
     series: [
       {
@@ -32,11 +32,7 @@ const PieChartG = () => {
       <h3 className="heading-3" style={{ textAlign: "center" }}>
         Google Marketplace
       </h3>
-      <AgCharts
-        options={options}
-        className="chart"
-        style={{ width: "800px", height: "400px" }}
-      />
+      <AgCharts options={options} className="chart" />
     </div>
   );
 };
