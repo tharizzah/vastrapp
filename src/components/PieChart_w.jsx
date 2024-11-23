@@ -6,6 +6,7 @@ import { getWebsiteData } from "../data.js";
 const PieChart_w = () => {
   const [options, setOptions] = useState({
     data: getWebsiteData(),
+    theme: "ag-material-dark",
     title: {
       text: ""
     },
@@ -17,12 +18,12 @@ const PieChart_w = () => {
         type: "pie",
         angleKey: "amount",
         calloutLabelKey: "asset",
-        sectorLabelKey: "amount",
-        sectorLabel: {
-          color: "white",
-          fontWeight: "bold",
-          formatter: ({ value }) => `${(params.value * 100).toFixed(2)}%`
-        }
+        sectorLabelKey: "amount"
+        // sectorLabel: {
+        //   color: "white",
+        //   fontWeight: "bold",
+        //   formatter: ({ value }) => `${(params.value * 100).toFixed(2)}%`
+        // }
       }
     ]
   });
@@ -32,10 +33,8 @@ const PieChart_w = () => {
       <h3 className="heading-3" style={{ textAlign: "center" }}>
         Website (no fee)
       </h3>
-      <div>
-        <div className="ag-theme-material">
-          <AgCharts options={options} className="chart" />
-        </div>
+      <div className="ag-theme-material">
+        <AgCharts options={options} className="chart" />
       </div>
     </div>
   );

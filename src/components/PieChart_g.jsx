@@ -6,6 +6,7 @@ import { getGoogleData } from "../data.js";
 const PieChartG = () => {
   const [options, setOptions] = useState({
     data: getGoogleData(),
+    theme: "ag-material-dark",
     title: {
       text: ""
     },
@@ -17,12 +18,12 @@ const PieChartG = () => {
         type: "pie",
         angleKey: "amount",
         calloutLabelKey: "asset",
-        sectorLabelKey: "amount",
-        sectorLabel: {
-          color: "white",
-          fontWeight: "bold",
-          formatter: ({ value }) => `${(params.value * 100).toFixed(2)}%`
-        }
+        sectorLabelKey: "amount"
+        // sectorLabel: {
+        //   color: "white",
+        //   fontWeight: "bold",
+        //   formatter: ({ value }) => `${(params.value * 100).toFixed(2)}%`
+        // }
       }
     ]
   });
