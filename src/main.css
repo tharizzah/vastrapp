@@ -35,7 +35,7 @@
 
 .chart {
   width: 800px;
-  height: 500px;
+  height: 475px;
 }
 
 .w-layout-blockcontainer {
@@ -44,10 +44,20 @@
   margin-right: auto;
   display: block;
 }
+.section.drk {
+  background: #192333;
+  background-color: #192333;
+  padding-bottom: 5%;
+  color: #fff;
+}
 
 @media screen and (max-width: 991px) {
   .w-layout-blockcontainer {
     max-width: 728px;
+  }
+  .chart {
+    width: 420px;
+    height: 475px;
   }
 }
 
@@ -842,7 +852,7 @@
     width: 90%;
   }
   .chart {
-    width: 650px;
+    width: 100%;
     height: 350px;
   }
 }
@@ -925,7 +935,6 @@
     line-height: 32px;
   }
   .chart {
-    width: 550px;
     height: auto;
   }
 }
