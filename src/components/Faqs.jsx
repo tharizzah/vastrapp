@@ -5,7 +5,7 @@ import ios2 from "../assets/iOS_TuneGevity_2.png";
 
 const Faqs = () => {
   return (
-    <section id="faq" className="section top">
+    <section id="faqs" className="section top">
       <div
         data-w-id="b6430c66-5a74-72b6-3b08-7113c0119734"
         style={{ opacity: 0 }}
