@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { AgCharts } from "ag-charts-react";
-import { getGoogleData } from "../data";
+import { getAppleData } from "../data.js";
 
-const PieChartG = () => {
+const PieChart = () => {
   const [options, setOptions] = useState({
-    data: getGoogleData(),
-    //theme: 'ag-material-dark',
+    data: getAppleData(),
     theme: "ag-material-dark",
     title: {
       text: ""
@@ -32,7 +31,7 @@ const PieChartG = () => {
   return (
     <div className="drk">
       <h3 className="heading-3" style={{ textAlign: "center" }}>
-        Google Marketplace
+        Apple Marketplace
       </h3>
       <div className="ag-theme-material">
         <AgCharts options={options} className="chart" />
@@ -41,4 +40,4 @@ const PieChartG = () => {
   );
 };
 
-export default PieChartG;
+export default PieChart;

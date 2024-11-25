@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { AgCharts } from "ag-charts-react";
-import { getWebsiteData } from "../data.js";
+import { getWebsiteData } from "../data";
 
-const PieChart_w = () => {
+const PieChartW = () => {
   const [options, setOptions] = useState({
     data: getWebsiteData(),
+    // theme: 'ag-material-dark',
     theme: "ag-material-dark",
     title: {
       text: ""
@@ -40,4 +41,4 @@ const PieChart_w = () => {
   );
 };
 
-export default PieChart_w;
+export default PieChartW;

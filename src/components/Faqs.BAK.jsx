@@ -5,7 +5,7 @@ import ios2 from "../assets/iOS_TuneGevity_2.png";
 
 const Faqs = () => {
   return (
-    <section id="faq" className="section top">
+    <section id="faqs" className="section top">
       <div
         data-w-id="b6430c66-5a74-72b6-3b08-7113c0119734"
         style={{ opacity: 0 }}
@@ -64,7 +64,7 @@ const Faqs = () => {
               VASTR partners with established music industry entities that have
               a proven track record. To qualify for our platform, you must be a
               registered business entity (such as a record label, publishing
-              company, or licensed music marketplace) with documented sales
+              company, or licensed music Marketplace) with documented sales
               history. Once qualified, you'll have access to our comprehensive
               licensing tools where you can create digital licenses, set
               streaming rates, and manage royalty distributions. Our automated
@@ -124,11 +124,11 @@ const Faqs = () => {
             <p>
               VASTR allows artists and labels to control pricing per stream for
               exclusive licenses, and a flat price of $0.02 for non-exclusive
-              licenses. The fees paid on each transaction are; 10% to VASTR and
-              10% to the digital store that sold it (such as VASTR's Deamle).
-              There is also a 'Marketplace Origin Fee' between 0-30%. (see pie
-              charts and calculator above). The copyright owners receive the
-              balance after fees.
+              licenses. The platform takes a fee from each transaction before
+              Marketplace fees, with 10% going to VASTR and 10% going to the
+              digital store that sold it (such as VASTR's Deamle). The
+              Marketplace fee then comes out (see pie charts and calculator
+              above) with the copyright owners receiving the balance.
             </p>
           </div>
         </div>
@@ -247,15 +247,15 @@ const Faqs = () => {
               className="icon"
             />
             <div className="spacer10"></div>
-            <p>How much are marketplace fees, and what are they?</p>
+            <p>How much are Marketplace fees, and what are they?</p>
           </div>
           <div className="spacer20"></div>
           <div className="p-answers">
             <p>
               Marketplace fees are outside of VASTR’s control. They represent
               what companies like Apple and Google charge for sales through apps
-              originating in their marketplaces. Apple charges 30%, Google
-              charges 3%, and all website sales will have no marketplace fee
+              originating in their Marketplaces. Apple charges 30%, Google
+              charges 3%, and all website sales will have no Marketplace fee
               (0%).{" "}
             </p>
           </div>
@@ -296,7 +296,7 @@ const Faqs = () => {
               src={arrow}
               loading="lazy"
               width="38"
-              alt=""
+              alt="Songs and artwork are uploaded to VASTR"
               className="icon"
             />
             <div className="spacer10"></div>
@@ -305,7 +305,8 @@ const Faqs = () => {
           <div className="spacer20"></div>
           <div className="p-answers">
             <p>
-              Digital stores receive their share when a fan streams a song.{" "}
+              Digital stores receive their share at the time of sale of a
+              license (when a fan listens).{" "}
             </p>
           </div>
         </div>

@@ -20,10 +20,9 @@ const RevenueCalc = () => {
     }
   }, [refresh]);
 
-
-  useEffect(()=>{
-    calcRevenue()
-  },[value,streams, rate])
+  useEffect(() => {
+    calcRevenue();
+  }, [value, streams, rate]);
 
   useEffect(() => {
     if (!isChecked) {
@@ -60,8 +59,8 @@ const RevenueCalc = () => {
 
   function calcAppleMusic() {
     let numRate = 0.01;
-    if(rate < 0.01){
-      numRate = 0
+    if (rate < 0.01) {
+      numRate = 0;
     }
     let numStreams = Number(streams);
     setRev3(numRate * numStreams);
@@ -69,8 +68,8 @@ const RevenueCalc = () => {
 
   function calcSpotify() {
     let numRate = 0.004;
-    if(rate < 0.004){
-      numRate = 0
+    if (rate < 0.004) {
+      numRate = 0;
     }
     let numStreams = Number(streams);
     setRev2(numRate * numStreams);
@@ -78,8 +77,8 @@ const RevenueCalc = () => {
 
   function calcPandora() {
     let numRate = 0.00133;
-    if(rate < 0.00133){
-      numRate = 0
+    if (rate < 0.00133) {
+      numRate = 0;
     }
     let numStreams = Number(streams);
     setRev4(numRate * numStreams);
@@ -90,11 +89,11 @@ const RevenueCalc = () => {
     let rateInput = Number(rate);
     if (!isNumber(streamQty)) {
       alert("Streams must be a number.");
-      return
+      return;
     }
     if (!isNumber(rateInput)) {
       alert("Rate must be a number.");
-      return
+      return;
     }
     calcWeb();
     calcAppleMusic();
@@ -112,7 +111,10 @@ const RevenueCalc = () => {
 
   return (
     <section id="keyfeatures" className="section bg">
-      <div className="w-layout-blockcontainer container w-container">
+      <div
+        className="w-layout-blockcontainer container w-container"
+        style={{ background: "#ffffff" }}
+      >
         <h1 className="heading center">Revenue Calculator</h1>
         <div className="card-rows">
           <div
@@ -121,14 +123,14 @@ const RevenueCalc = () => {
             className="cards"
           >
             <SelectField
-              label="Select Split"
+              label="Select Marketplace"
               //placeholder="Web based sales (no marketplace fee)"
               value={value}
-              onChange={(e) => setValue(e.target.value)}
+              onChange={e => setValue(e.target.value)}
             >
-              <option value="web">Web based Sales</option>
-              <option value="google">Google (Android)</option>
-              <option value="apple">Apple (iOS)</option>
+              <option value="web">Web based streams</option>
+              <option value="google">Google based streams (Android)</option>
+              <option value="apple">Apple based streams (iOS)</option>
             </SelectField>
             {/* <div className="card-title">Select Marketplace</div> */}
             <div>Streams</div>
@@ -136,23 +138,22 @@ const RevenueCalc = () => {
               placeholder={streams}
               label="Streams"
               id="streams"
-              onChange={(e) => {
+              onChange={e => {
                 setStreams(e.currentTarget.value);
               }}
             />
-            <div >
+            <div>
               <SwitchField
                 className="card-rows"
                 label="Exclusive to VASTR"
                 isChecked={isChecked}
-                onChange={(e) => {
+                onChange={e => {
                   setIsChecked(e.target.checked);
                 }}
               />
             </div>
             {isChecked && (
               <div>
-                
                 <div>Rate per stream</div>
                 <div className="card-rows">
                   <h4>$</h4>
@@ -161,7 +162,7 @@ const RevenueCalc = () => {
                     placeholder="0.05"
                     label="Rate"
                     id="rate"
-                    onChange={(e) => {
+                    onChange={e => {
                       setRate(e.currentTarget.value);
                     }}
                   />
@@ -170,6 +171,20 @@ const RevenueCalc = () => {
             )}
             <div className="btn-container">
               * Exclusives have a minimum rate of $0.05
+            </div>
+            <br />
+            <div className="small-text">
+              * rates used to calculate artist revenue:
+              <br />
+              VASTR @ $0.016 for non-exclusive licenses
+              <br />
+              VASTR @ 80% of exclusive licenses
+              <br />
+              Apple Music @ $0.01 per stream
+              <br />
+              Spotify @ $0.004 per stream
+              <br />
+              Pandora @ $0.00133 per stream
             </div>
           </div>
           <div

@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { AgCharts } from "ag-charts-react";
-import { getGoogleData } from "../data";
+import { getGoogleData } from "../data.js";
 
 const PieChartG = () => {
   const [options, setOptions] = useState({
     data: getGoogleData(),
-    //theme: 'ag-material-dark',
     theme: "ag-material-dark",
     title: {
       text: ""
