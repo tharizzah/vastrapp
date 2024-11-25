@@ -581,7 +581,7 @@ div.drk h3.heading-3 {
     padding-bottom: 0%;
     font-size: 12px;
     display: flex;
-    position: absolute;
+    position: relative;
     inset: auto 0% 0%;
   }
 
