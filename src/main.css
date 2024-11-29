@@ -71,7 +71,13 @@ div.drk h3.heading-3 {
   min-height: auto;
   padding-top: 20%;
   position: relative;
-  z-index: -1;
+  z-index: 2;
+}
+
+.topindex {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 99999;
 }
 
 @media screen and (max-width: 991px) {
@@ -433,7 +439,7 @@ div.drk h3.heading-3 {
     min-height: auto;
     padding-top: 20%;
     position: relative;
-    z-index: -1;
+    z-index: 2;
   }
 
   .section.top {
@@ -797,6 +803,10 @@ div.drk h3.heading-3 {
 
   .section.smoke {
     padding-bottom: 5%;
+  }
+
+  .section.bg {
+    overflow-x: hidden;
   }
 
   .section.footer {

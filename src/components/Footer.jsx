@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footerbottom">
         <div className="w-layout-blockcontainer container-grow w-container">
           <div className="space-between _100 line">
-            <div className="footer-text">©2024 DML.SOLUTIONS INC.</div>
+            <div className="footer-text">©2024 VASTR.SOLUTIONS INC.</div>
             <h3 className="heading-4">VASTR</h3>
             {/* <a href="#" className="button ns w-inline-block">
               <div>Purchase Now</div>
